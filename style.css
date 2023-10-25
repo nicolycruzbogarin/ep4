@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    grid-area: cab;
+    background-color: pink;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+main{
+    grid-area: pri;
+    background-color:#fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+footer{
+    grid-area: rod;
+    background-color: pink;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    "cab cab"
+    "pri pri"
+    "rod rod";
+    grid-gap: 5px;
+    grid-template-rows: auto 1000px auto;
+}

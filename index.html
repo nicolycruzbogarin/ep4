@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body onload="um_seila()">
-    <button type="button" onclick="dois_sei()">chama a função</button>
-    <script src="script.js"></script>
+<header> historia</header>
+<body onload="inclui_nome()">
+
+    <script src="script.jss"></script>
+
+    <p id="marcacao_nome"></p>
+
     <form>
-        pergunta <br>
-        <input type="radio" name="oi" id="correta"> cardan é lindo<br>
-        <input type="radio" name="oi" id="incorreta"> cardan é feio <br>
-        <input type="radio" name="oi" id="incorreta"> cardan é feio <br>
-        <button type="button">resposta</button>
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta2" value="correto"> cardan é lindo <br>
-        <input type="radio" name="resposta2" value="incorreta"> cardan é feio <br>
-        <input type="radio" name="resposta2" value="incorreta"> cardan é feio <br>
-        <p id="resultado_2"></p>
+        <h3>Questão 1</h3>
+        <input type="radio" name="quest_1" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
 
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta3" value="correto"> cardan é lindo<br>
-        <input type="radio" name="resposta3" value="incorreta"> cardan é feio <br>
-        <input type="radio" name="resposta3" value="incorreta"> cardan é feio <br>
-        <p id="resultado_3"></p>
+        <h3>Questão 2</h3>
+        <input type="radio" name="quest_2" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
 
-        <h3>Aqui é uma questão?</h3>
-        <input type="radio" name="resposta4" value="correto"> cardan é lindo <br>
-        <input type="radio" name="resposta4" value="incorreta"> cardan é feio <br>
-        <input type="radio" name="resposta4" value="incorreta"> cardan é feio <br>
-        <p id="resultado_4"></p><br>
-        <button type="button" onclick="botaozinho_resposta()">Verificar</button>
+        <h3>Questão 3</h3>
+        <input type="radio" name="quest_3" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
+
+        <h3>Questão 4</h3>
+        <input type="radio" name="quest_4" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
+
+        <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
     </form>
-    <script src="script.js"></script>
-    </main>
-    <footer></footer>
+    
 </body>
-</html>
-    </head>
 </html>
