@@ -14,7 +14,8 @@ header {
     text-shadow: 3px 3px 3px #ffffff;
     color:#fdcae1;
     font-size: 50px;
-    padding: 15px;
+    padding: 20px;
+    
 }
 header h1 {
     font-size: 24px;
@@ -126,4 +127,24 @@ button {
 
 button:hover {
     background-color: pink; 
+}
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "secn"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+    section{
+        display: flex;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    
 }
