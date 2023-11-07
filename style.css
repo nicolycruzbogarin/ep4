@@ -5,12 +5,16 @@
 }
 header {
     grid-area: cab;
-    background-color: pink;
-    color: #fff;
+    background-color:#ffe5f0 ;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 3px #ffffff;
+    color:#fdcae1;
+    font-size: 50px;
+    padding: 15px;
 }
 header h1 {
     font-size: 24px;
