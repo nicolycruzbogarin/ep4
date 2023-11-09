@@ -5,21 +5,38 @@
 }
 header {
     grid-area: cab;
-    background-color:#ffe5f0 ;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 3px 3px 3px #ffffff;
-    color:#fdcae1;
+    text-shadow: 3px 3px 3px #ffff;
+    border-width: 2px 0 2px 0;
+    color:#d598a3;
     font-size: 50px;
     padding: 20px;
     
 }
-header h1 {
-    font-size: 24px;
-    font-weight: bold;
+   
+h1{
+    font-size: 40px; /* Esta linha define o tamanho da fonte para elementos com a classe .início como 40 pixeis. */
+    color: #020202;
+    text-align: center;  /* Esta linha centraliza o texto dentro dos elementos .início. Isso significa que o texto será alinhado horizontalmente no centro do elemento. */
+    font-family:Georgia, 'Times New Roman', Times, serif; /*Esta regra define a família de fontes para os elementos afetados. */
+    text-shadow: 2px 2px 2px rgb(18, 18, 18);
+    border-width: 2px 0 2px 0;
+}
+.container{
+    max-width: 1000px;
+    margin: 5px auto; /*  A margem cria espaço ao redor do elemento. */ 
+    background-color:#ffdbe6;
+    padding: 30px; /* O preenchimento interno cria espaço entre o conteúdo dentro desses elementos e suas bordas. */
+    text-align: justify;
+    border-radius: 40px;
+}
+h3{
+    font-size: 20px;   
+    color: #996b42; 
 }
 .group {
     display: flex;
@@ -53,7 +70,7 @@ header h1 {
 .icon {
     position: absolute;
     left: 1rem;
-    fill: #9e9ea7;
+    fill: #8a8a90;
     width: 1rem;
     height: 1rem;
 }
@@ -63,13 +80,9 @@ header h1 {
 }
 main{
     grid-area: pri;
-    background-color:#fff;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    gap: 20px;
+    
 }
+    
 footer{
     grid-area: rod;
     background-color: pink;
@@ -82,17 +95,8 @@ body {
     "rod rod";
     grid-gap: 5px;
     grid-template-rows: auto 1000px auto;
-}
-.quiz-container {
-    max-width: 500px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    height: 400px;
+    background-color: #D8D4C9;
+
 }
 .question {
     font-size: 18px;
